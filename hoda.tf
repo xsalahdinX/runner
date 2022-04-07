@@ -219,14 +219,6 @@ default_action {
 }
 
 
-resource "aws_s3_bucket" "tf_course" {
-    
-    bucket = "salahdin-bucket"
-    acl = "private"
-}
-
-
-
 
 
 
