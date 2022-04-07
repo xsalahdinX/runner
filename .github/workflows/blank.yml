@@ -18,6 +18,4 @@ jobs:
           aws-access-key-id: ${{ secrets.AWSACCESSKEY }}
           aws-secret-access-key: ${{ secrets.AWSSECRETKEY }}
           aws-region: us-east-1
-      - run: terraform init
-      - run: terraform plan
       - run: terraform destroy -auto-approve
