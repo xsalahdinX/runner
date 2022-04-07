@@ -20,4 +20,4 @@ jobs:
           aws-region: us-east-1
       - run: terraform init
       - run: terraform plan
-      - run: terraform apply -auto-approve
+      - run: terraform destroy -auto-approve
