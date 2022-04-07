@@ -219,9 +219,21 @@ default_action {
 }
 
 
+resource "aws_s3_bucket" "tf_course" {
+    
+    bucket = "salahdin-bucket"
+    acl = "private"
+}
+
+
+
+
+
+
+
 terraform {
   backend "s3" {
-    bucket         = "tharwat-bucket"
+    bucket         = aws_s3_bucket.tf_course.id
     key            = "Group1/terraform.tfstate"
     region         = "us-east-1"
   }
