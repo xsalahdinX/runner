@@ -233,7 +233,7 @@ resource "aws_s3_bucket" "tf_course" {
 
 terraform {
   backend "s3" {
-    bucket         = aws_s3_bucket.tf_course.id
+    bucket         = "salahdin-bucket"
     key            = "Group1/terraform.tfstate"
     region         = "us-east-1"
   }
